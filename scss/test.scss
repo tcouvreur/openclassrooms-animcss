@@ -69,13 +69,15 @@ article {
 	}
 	aside {
 		position: relative;
-		top: -9rem;
+		top: -11rem;
 		right: calc(-90vw + 6rem);
 		background: $color3;
 		color: #068b6a;
 		width: fit-content;
-		padding: 0.5rem;
-	}
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+  }
+  
 	span {
 		font-weight: initial;
 		display: block;
@@ -88,38 +90,30 @@ article {
 		border-radius: 0 0 .5rem .5rem;
 	}
 	h3 {
+    color: $black;
 		margin: 0;
 		padding: 0.5rem;
 	}
 	i {
 		margin-right: 1rem;
-		font-size: 1.5rem;
-	}
-	figcaption {
-		+ {
-			restaurant {
-				margin-top: -2rem;
-			}
-		}
-	}
-	article {
-		restaurant {
-			&:hover {
-				i {
-					background: -webkit-linear-gradient($color1,$color2);
-					-webkit-background-clip: text;
-					-webkit-text-fill-color: transparent;
-					border: 1px solid;
-					font-weight: 900;
-				}
-			}
-		}
-	}
+    font-size: 1.5rem;
+  }
+  &:hover {
+    i {
+      background: -webkit-linear-gradient($color1,$color2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      border: 1px solid;
+      font-weight: 900;
+    }
+  }
+}
+
 	a {
 		text-decoration: none;
 		color: grey;
 	}
-}
+
 article.palette {
 	background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
 }
@@ -160,9 +154,31 @@ h2 {
 	color: black;
 }
 footer {
-	background-color: #353535;
+  background-color: #353535;
 	color: #f6f6f6;
-	padding: 2rem;
+  padding: 2rem;
+
+  p.utensils::before {
+    content: "\f2e7";
+    font-family: "Font Awesome 5 Free";
+    color: white;
+    font-weight: 900;
+    margin-right: 0.8rem;
+    font-size: 1rem;
+  }
+
+  p.partner::before {
+    content: "\f4c4";
+    font-family: "Font Awesome 5 Free";
+    color: white;
+    font-weight: 900;
+    font-size: 0.8rem;
+    margin-right: 0.6rem;
+  }
+  
+  img {
+    max-width: 30vw;
+  }
 }
 .fonctionnement {
 	h2 {
