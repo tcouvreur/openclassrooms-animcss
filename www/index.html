@@ -15,6 +15,18 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Shrikhand&display=swap"
       rel="stylesheet"
     />
+
+    <script>
+        window.onload = function () {
+          const list = document.getElementsByClassName("fa-heart");
+          for (let i = 0, size = list.length; i < size; i++) {
+            list[i].addEventListener("click", function (e) {
+              e.preventDefault();
+              e.stopPropagation();
+            });
+          }
+        }
+    </script>
   </head>
   <body>
     <header>
