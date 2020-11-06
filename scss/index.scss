@@ -5,14 +5,9 @@ $color4: #f5edff;
 $color5: #068b6a;
 $grey: #f6f6f6;
 $grey2: #eaeaea;
-$grey3: #7e7e7e;
+$grey3: #7e7e7e; 
 $black: #353535;
-body {
-	font-family: "Roboto";
-	color: #353535;
-	padding: 0;
-	margin: 0;
-}
+
 form {
 	width: 100%;
 	display: flex;
@@ -20,7 +15,7 @@ form {
 	justify-content: center;
 	align-items: center;
 	i {
-		display: block;
+		display: block; 
 	}
 	input {
 		background-color: #eaeaea;
@@ -99,7 +94,7 @@ article {
     font-size: 1.5rem;
   }
   &:hover {
-    i {
+    i.fa-heart {
       background: -webkit-linear-gradient($color1,$color2);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -136,50 +131,14 @@ article.delice {
 		margin: 3rem auto 1.5rem;
 	}
 }
-header {
-	text-align: center;
-	background-image: url(../images/retour.png);
-	background-repeat: no-repeat;
-	background-position-x: 1rem;
-	background-position-y: center;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	height: 4rem;
-}
+
 h1 {
 	color: black;
 }
 h2 {
 	color: black;
 }
-footer {
-  background-color: #353535;
-	color: #f6f6f6;
-  padding: 2rem;
 
-  p.utensils::before {
-    content: "\f2e7";
-    font-family: "Font Awesome 5 Free";
-    color: white;
-    font-weight: 900;
-    margin-right: 0.8rem;
-    font-size: 1rem;
-  }
-
-  p.partner::before {
-    content: "\f4c4";
-    font-family: "Font Awesome 5 Free";
-    color: white;
-    font-weight: 900;
-    font-size: 0.8rem;
-    margin-right: 0.6rem;
-  }
-  
-  img {
-    max-width: 30vw;
-  }
-}
 .fonctionnement {
 	h2 {
 		width: calc(70% + 4rem);
