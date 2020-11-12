@@ -1,0 +1,49 @@
+body {
+	font-family: "Roboto";
+	color: #353535;
+	padding: 0;
+	margin: 0;
+}
+    
+header {
+	text-align: center;
+	background-repeat: no-repeat;
+	background-position-x: 1rem;
+	background-position-y: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    height: 4rem;
+}
+
+header.back {
+    background-image: url(../images/retour.png);
+}
+
+footer {
+    background-color: #353535;
+    color: #f6f6f6;
+    padding: 2rem;
+  
+    p.utensils::before {
+      content: "\f2e7";
+      font-family: "Font Awesome 5 Free";
+      color: white;
+      font-weight: 900;
+      margin-right: 0.8rem;
+      font-size: 1rem;
+    }
+  
+    p.partner::before {
+      content: "\f4c4";
+      font-family: "Font Awesome 5 Free";
+      color: white;
+      font-weight: 900;
+      font-size: 0.8rem;
+      margin-right: 0.6rem;
+    }
+    
+    img {
+      max-width: 30vw;
+    }
+}
