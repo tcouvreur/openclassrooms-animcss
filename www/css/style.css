@@ -146,8 +146,12 @@ article.delice {
 h1 {
   color: black; }
 
-h2 {
-  color: black; }
+#hp-title {
+  color: black;
+  text-transform: inherit;
+  font-weight: bold; }
+  #hp-title::after {
+    content: initial; }
 
 .fonctionnement h2 {
   width: calc(70% + 4rem);
