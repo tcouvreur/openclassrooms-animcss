@@ -10,24 +10,24 @@ function makeCss() {
   return gulp.src('./scss/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(concat('style.css'))
-    .pipe(gulp.dest('./www/css'));
+    .pipe(gulp.dest('./css'));
 };
 
 function minimify(){
-  return gulp.src('./www/css/*.css')
+  return gulp.src('./css/*.css')
     .pipe(cleanCSS())
-    .pipe(gulp.dest('./www/css'))
+    .pipe(gulp.dest('./css'))
     ;
 }
 
 function watch(){
   browserSync.init({
     server: {
-      baseDir : "./www"
+      baseDir : "./"
     }
   });
   gulp.watch("./scss/*.scss", makeCss);
-  gulp.watch("./www/").on("change", browserSync.reload);
+  gulp.watch("./").on("change", browserSync.reload);
 }
 
 exports.watch = watch;
