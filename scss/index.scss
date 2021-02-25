@@ -5,7 +5,7 @@ $color4: #f5edff;
 $color5: #068b6a;
 $grey: #f6f6f6;
 $grey2: #eaeaea;
-$grey3: #7e7e7e; 
+$grey3: #7e7e7e;
 $black: #353535;
 
 form {
@@ -15,7 +15,7 @@ form {
 	justify-content: center;
 	align-items: center;
 	i {
-		display: block; 
+		display: block;
 	}
 	input {
 		background-color: #eaeaea;
@@ -37,11 +37,14 @@ section.intro {
 	text-align: center;
 	padding: 3rem;
 	h1 {
+		width: 74vw;
 		margin: 0;
+		display: inline;
 	}
 	button {
+		width: 12rem;
 		border-radius: 1.5rem;
-		background: linear-gradient(0.45turn,$color2, $color1);
+		background: linear-gradient(0.45turn, $color2, $color1);
 		padding: 1rem;
 		color: white;
 		border: 0;
@@ -51,11 +54,11 @@ article {
 	background-position: bottom;
 	background-repeat: no-repeat;
 	background-size: cover;
-	border-radius: 0.5rem;
+	border-radius: 1rem;
 	box-shadow: 0 0 8px #7b7b7b;
 	display: flex;
 	height: calc(225px + 4rem);
-  margin-bottom: 3rem;
+	margin-bottom: 3rem;
 	width: 90vw;
 	flex-direction: column-reverse;
 	justify-content: flex-start;
@@ -69,10 +72,10 @@ article {
 		background: $color3;
 		color: #068b6a;
 		width: fit-content;
-    padding: 0.5rem;
-    border-radius: 0.2rem;
-  }
-  
+		padding: 0.5rem;
+		border-radius: 0.2rem;
+	}
+
 	span {
 		font-weight: initial;
 		display: block;
@@ -82,32 +85,32 @@ article {
 		justify-content: space-between;
 		align-items: center;
 		background-color: white;
-		border-radius: 0 0 .5rem .5rem;
+		border-radius: 0 0 0.5rem 0.5rem;
 	}
 	h3 {
-    color: $black;
+		color: $black;
 		margin: 0;
 		padding: 0.5rem;
 	}
 	i {
 		margin-right: 1rem;
-    font-size: 1.5rem;
-  }
-  &:hover {
-    i.fa-heart {
-      background: -webkit-linear-gradient($color1,$color2);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      border: 1px solid;
-      font-weight: 900;
-    }
-  }
+		font-size: 1.5rem;
+	}
+	&:active {
+		i.fa-heart {
+			background: -webkit-linear-gradient($color1, $color2);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			border: 1px solid;
+			font-weight: 900;
+		}
+	}
 }
 
-	a {
-		text-decoration: none;
-		color: grey;
-	}
+a {
+	text-decoration: none;
+	color: grey;
+}
 
 article.palette {
 	background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
@@ -136,7 +139,8 @@ h1 {
 	color: black;
 }
 
-#hp-title {
+#hp-title-restau {
+	width: 90vw;
 	color: black;
 	text-transform: inherit;
 	font-weight: bold;
@@ -145,6 +149,14 @@ h1 {
 	}
 }
 
+#hp-title {
+	color: black;
+	text-transform: inherit;
+	font-weight: bold;
+	&::after {
+		content: initial;
+	}
+}
 
 .fonctionnement {
 	h2 {
@@ -187,9 +199,13 @@ h1 {
 		}
 	}
 	li.third {
-		background-color: #f5edff;
 		&::before {
 			content: "3";
+		}
+	}
+	li {
+		&:hover {
+			background-color: #f5edff;
 		}
 	}
 	i {
