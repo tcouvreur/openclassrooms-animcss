@@ -11,7 +11,6 @@
   <link href="./css/style.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Shrikhand&display=swap"
     rel="stylesheet" />
-
   <script>
     window.onload = function () {
       const list = document.getElementsByClassName("fa-heart");
@@ -26,6 +25,9 @@
 </head>
 
 <body>
+  <div id="page-loader">
+    <div class="loader"></div>
+  </div>
   <header>
     <img src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" />
   </header>
@@ -34,7 +36,7 @@
     <i class="fas fa-map-marker-alt"></i><input placeholder="Paris, Belleville" />
   </form>
   <section class="intro">
-    <h1>Réservez le menu qui vous convient</h1>
+    <h1 class="home-title">Réservez le menu qui vous convient</h1>
     <p>Découvrez les restaurants d'exception, séléctionnés par nos soins.</p>
     <button>Explorez nos restaurants</button>
   </section>

@@ -24,6 +24,10 @@ main {
     margin-top: -2rem;
     overflow: hidden;
     border-radius: 2rem 2rem 0 0;
+
+    .title-menu {
+        width: 90%;
+    }
 }
 
 aside.img {
@@ -195,6 +199,10 @@ h1 {
     align-items: stretch;
     margin-bottom: 0;
     font-size: 1.7em;
+    &:not(.home-title) {
+        font-family: Shrikhand;
+        font-weight: unset;
+    }
 
     i {
         display: flex;
@@ -202,7 +210,7 @@ h1 {
         font-size: 1.5rem;
         margin-top: 0.3rem;
         margin-left: 1.5rem;
-        &:active {
+        &:hover {
             background: -webkit-linear-gradient($color1, $color2);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
